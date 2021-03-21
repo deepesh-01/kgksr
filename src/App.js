@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
-import {Header} from './Components/header.js'
+import {Header} from './Components/header.js';
+import {Commitee} from './Components/commitee.js';
+import {AboutUs} from './Components/aboutUs.js';
+import {Home} from './Components/home.js';
+import {ContactUs} from './Components/contactUs.js';
+import {BrowserRouter as Router,Route} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <div >
-        <header>
-            <h1>App.js is working!</h1>
-            <Header></Header>
-        </header>
+        <Router>
+          <Header/>
+          <Route exact path='/' > <Home/> </Route>
+          <Route exact path='/commitee' > <Commitee/> </Route>
+          <Route exact path='/aboutus' > <AboutUs/> </Route>
+          <Route exact path='/contactus' > <ContactUs/> </Route>
+          
+        </Router>
       </div>
     );
   }
