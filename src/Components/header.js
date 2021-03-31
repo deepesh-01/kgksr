@@ -19,14 +19,14 @@ export const Header = () => {
                 <Link to='/'>
                     <Button color="inherit" className={classes.home}>Home</Button>
                 </Link>
-                <Link to='commitee'>
+                <Link to='/commitee'>
                     <Button color="inherit" className={classes.committee}>Committee</Button>
-                </Link>
-                <Link to='/aboutus'>
-                <Button color="inherit" className={classes.aboutUs}>About Us</Button>
                 </Link>
                 <Link to='/contactus'>
                 <Button color="inherit" className={classes.contactUs}>Contact Us</Button>                
+                </Link>
+                <Link to='/aboutus'>
+                <Button color="inherit" className={classes.aboutUs}>About Us</Button>
                 </Link>
             </Toolbar>
         </AppBar>
