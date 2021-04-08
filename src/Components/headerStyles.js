@@ -1,12 +1,11 @@
-import { makeStyles, withTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import { grey } from '@material-ui/core/colors';
 
 export default makeStyles((theme) => ({
 
-    root: {
-        '& .MuiTextField-root': {
-          margin: theme.spacing(1),
-        },
+    root: {[theme.breakpoints.down('xs')]:{
+            flexGrow:1,
+        }
       },
     home : {
         marginRight : '10px',
