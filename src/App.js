@@ -12,10 +12,11 @@ class App extends Component {
       <div >
         <Router>
           <Header/>
-          <Route exact path='/' > <Home/> </Route>
+      
           <Route exact path='/commitee' > <Commitee/> </Route>
           <Route exact path='/aboutus' > <AboutUs/> </Route>
           <Route exact path='/contactus' > <ContactUs/> </Route>
+          <Route path='/' > <Home/> </Route>
           
         </Router>
       </div>
